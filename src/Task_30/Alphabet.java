@@ -3,10 +3,11 @@ import java.util.Scanner;
 public class Alphabet {
     public static void main(String[] args) {
         Scanner obj = new Scanner(System.in);
-        System.out.println("Enter a Character");
+        System.out.println("Enter a letter");
         char ch = obj.nextLine().charAt(0);
 
-            if((ch >= 'a')&&(ch<='z')){
+
+            if(Character.isLetter(ch)){
                 System.out.println("Character is an alphabet");
             }
             else{
