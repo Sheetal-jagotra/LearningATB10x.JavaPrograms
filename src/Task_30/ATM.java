@@ -12,9 +12,11 @@ public class ATM {
 
         if (amount==0){
             System.out.println("Amount should be greater than 0 ");
+            System.out.println("Withdrawl Failed!!");
         }
         else if (amount%100 != 0){
-                System.out.println("Amount should be greater than 0 and multiple of 100");
+                System.out.println("Amount should multiple of 100");
+                System.out.println("Withdrawl Failed!!");
         }
         else if (amount <= Acc_Balance){
             int c = Acc_Balance-amount;
