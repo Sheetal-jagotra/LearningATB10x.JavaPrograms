@@ -22,6 +22,9 @@ public class ATM {
             int c = Acc_Balance-amount;
             System.out.println("Remaining Balance in the account "+ c);
         }
+        else {
+            System.out.println("Insufficient Funds");
+        }
 
 
 
