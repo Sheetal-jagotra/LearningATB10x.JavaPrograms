@@ -26,9 +26,6 @@ public class ATM {
             System.out.println("Insufficient Funds");
         }
 
-
-
-
     }
 }
 

@@ -6,7 +6,6 @@ public class Alphabet {
         System.out.println("Enter a letter");
         char ch = obj.nextLine().charAt(0);
 
-
             if(Character.isLetter(ch)){
                 System.out.println("Character is an alphabet");
             }

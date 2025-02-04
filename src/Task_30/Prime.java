@@ -5,21 +5,22 @@ public class Prime {
         System.out.println("Enter a number");
         Scanner obj = new Scanner(System.in);
         int a = obj.nextInt();
-        int flag = 0;
+        int count= 0;
         if (a == 0 || a == 1) {
             System.out.println("Number is not Prime");
-        } else {
+        }
+        else {
             for (int i = 2; i <= a; i++) {
-                if (a % i != 0) {
-                    flag = 1;
-                    System.out.println("Number is not prime");
-                }
-                if (flag == 0) {
-                    System.out.println("Number is prime");
-                    break;
+                if (a % i == 0) {
+                    count = count + 1;
                 }
             }
-
+        }
+        if(count==1){
+            System.out.println("It is a  Prime Number");
+        }
+        else{
+            System.out.println("It is not a Prime Number");
         }
     }
 }
