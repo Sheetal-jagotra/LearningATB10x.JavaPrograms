@@ -12,5 +12,13 @@ public class Palindrome {
         StringBuilder a = new StringBuilder(ch);
         a.reverse();
         System.out.println(a);
+
+    if (ch.contentEquals(a)){
+        System.out.println("It is Palindrome");
+    }
+    else{
+        System.out.println("It is not Palindrome");
+    }
     }
 }
+
